@@ -59,6 +59,7 @@ function Home() {
             />
           </div>
           <div ref={cardParent} className="mt-10">
+            <h1 className="text-white font-bold text-xl">Task List 📚</h1>
             {todos.map((todo) => (
               <div key={todo.id}>
                 <Card value={todo.value} setTodos={setTodos} id={todo.id} />
